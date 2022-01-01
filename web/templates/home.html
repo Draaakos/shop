@@ -3,9 +3,16 @@
 
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/home-page.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/carousel.min.css' %}" />
 {% endblock %}
 
-{% block content %}
+{% block js %}
+    <script>window.serializedContent = {{ serializedContent }}</script>
+    <script defer src="{% static 'home.bundle.js'%}" ></script>
+{% endblock%}
+
+
+{% block contents %}
 <div class="banner">
     <div class="grid-2 full-height">
         <div class="background-img background-img__1 background-img__main">

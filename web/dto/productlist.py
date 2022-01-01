@@ -36,6 +36,7 @@ class _ProductDTO:
             'id': self.product.id,
             'name': self.product.name,
             'price': adjusted_price,
+            'before_price': self.product.before_price,
             'quantity': self.product.quantity,
             'description': self.product.description,
             'url': url,

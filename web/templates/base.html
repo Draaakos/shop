@@ -16,9 +16,11 @@
     {% endautoescape %}
 </head>
 <body>
-    {% include "ui/navbar.html" %}
-    {% block content %}{% endblock %}
-    <section id="app"></section>
-    {% include "ui/footer.html" %}
+    <div class="page">
+        {% include "ui/navbar.html" %}
+        <section id="app" class="page__wrapper"></section>
+        {% block content %}{% endblock %}
+        {% include "ui/footer.html" %}
+    </div>
 </body>
 </html>

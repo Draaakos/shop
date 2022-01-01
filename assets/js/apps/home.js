@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Component from '../modules/Home';
+import Home from '../modules/Home';
+
+const products = window.serializedContent.products;
 
 ReactDOM.render(
-  React.createElement(Component),
+  <Home products={products} />,
   document.querySelector('#app')
 );

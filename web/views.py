@@ -5,8 +5,9 @@ from web.handlers.plpview import PLPView
 from web.handlers.pdpview import PDPView
 from web.handlers.successview import SuccessView
 from web.handlers.profileview import ProfileView
+from web.handlers.homeview import HomeView
 
-home = TemplateView.as_view(template_name='home.html')
+home = HomeView.as_view()
 product_list = PLPView.as_view()
 product_detail = PDPView.as_view()
 basket = TemplateView.as_view(template_name='basket.html')

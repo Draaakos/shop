@@ -3,6 +3,84 @@
 @import 'ui/config'
 @import 'ui/family-fonts'
 
+.carousel-root
+    .slide
+        &> div
+            height 640px
+
+        img
+            height 100%
+            width 100%
+            object-fit cover
+
+.page
+    background-color: #683fb3
+
+    &__wrapper
+       max-width 1280px
+       margin 0 auto
+
+    &__slider
+        margin 1em 0
+
+
+.pod-list
+    display grid
+    grid-template-columns repeat(5, 1fr)
+    gap 1em
+
+.pod
+    &__header
+        min-height 250px
+        background-color: white
+
+        img
+            height 250px
+            width 100%
+            object-fit cover
+
+    &__body
+        font-family 'monserrat'
+        min-height 100px
+        background-color #463368
+        padding 1em
+        color white
+
+        &__name
+            font-size .8em
+            margin-bottom .5em
+
+        &__quantity
+            font-family 'monserrat'
+            font-size .8em
+            font-weight bold
+
+        &__price
+            font-family 'monserrat'
+            color #29ff1b
+            font-size 1.2em
+
+            &-before
+                font-size 1em
+                text-decoration line-through
+                color #e37f92
+
+.title
+    font-family 'monserrat'
+    color white
+    margin 2em 0 1em
+    border-bottom 2px dotted white
+
+
+
+
+
+
+
+
+
+
+
 .banner
     width 100%
     font-family 'monserrat'

@@ -39,6 +39,7 @@ class Product(models.Model):
     name = models.CharField(max_length=200)
     sku = models.CharField(max_length=30)
     price = models.FloatField()
+    before_price = models.FloatField(default=0)
     quantity = models.IntegerField()
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)

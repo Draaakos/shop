@@ -2,17 +2,19 @@ import React, { Component } from 'react';
 import Slider from 'ui/Slider';
 
 const Pod = ({ data }) => (
-  <div className="pod">
-    <div className="pod__header">
-      <img src={data.images[0].url} />
+  <a href={data.url}>
+    <div className="pod">
+      <div className="pod__header">
+        <img src={data.images[0].url} />
+      </div>
+      <div className="pod__body">
+        <div className="pod__body__name">{data.name}</div>
+        <div className="pod__body__quantity">Stock: {data.quantity}</div>
+        <div className="pod__body__price-before">Antes: {data.before_price} CLP</div>
+        <div className="pod__body__price">Ahora: {data.price} CLP</div>
+      </div>
     </div>
-    <div className="pod__body">
-      <div className="pod__body__name">{data.name}</div>
-      <div className="pod__body__quantity">Stock: {data.quantity}</div>
-      <div className="pod__body__price-before">Antes: {data.before_price} CLP</div>
-      <div className="pod__body__price">Ahora: {data.price} CLP</div>
-    </div>
-  </div>
+  </a>
 );
 
 

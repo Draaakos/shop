@@ -581,25 +581,25 @@ a:hover {
   .gallery {
     height: 50vw;
     text-align: center;
-    display: flex;
     justify-content: space-around;
     max-height: 520px;
     flex-direction: row-reverse;
   }
   .gallery img {
-    width: auto;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1em;
   }
   .gallery__menu {
-    width: 100px;
-    min-width: 100px;
     height: 100%;
     overflow: hidden;
-    display: block;
+    display: flex;
   }
   .gallery__menu__item {
     height: 100px;
     margin-bottom: 5px;
-    width: 100%;
+    width: 100px;
+    margin: 0 0.5em;
   }
 }
 @font-face {

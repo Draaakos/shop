@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/success-page.css' %}" />
+{% endblock %}
+
+{% block content %}
+    <script defer src="{% static 'success.bundle.js'%}" ></script>
+{% endblock %}

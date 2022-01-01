@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block js %}
+<script>
+    window.serializedContent = {{ serializedContent }};
+</script>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/pdp-page.css' %}" />
+{% endblock %}
+
+{% block content %}
+    <script defer src="{% static 'pdp.bundle.js'%}" ></script>
+{% endblock %}

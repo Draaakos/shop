@@ -1,0 +1,73 @@
+[
+  {
+    "model": "web.category",
+    "pk": 1,
+    "fields": {
+      "name": "sneakers"
+    }
+  },
+  {
+    "model": "web.brand",
+    "pk": 1,
+    "fields": {
+      "name": "Nike"
+    }
+  },
+  {
+    "model": "web.product",
+    "pk": 1,
+    "fields": {
+      "name": "nike air force 01",
+      "sku": "nikeaf01",
+      "price": 67000.0,
+      "quantity": 10,
+      "category": 1,
+      "size": 1,
+      "color": 1,
+      "brand_id": 1,
+      "description": "nike air force 01 Low white OG",
+      "related_skus": null
+    }
+  },
+  {
+    "model": "web.customer",
+    "pk": 1,
+    "fields": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@mailinator.com",
+      "phone": "987766543",
+      "uuid": "9d3f0282-1ebd-4f00-b26b-6cd1be524c36",
+      "password": "601f1889667efaebb33b8c12572835da3f027f78"
+    }
+  },
+  {
+    "model": "web.size",
+    "pk": 1,
+    "fields": {
+      "name": "9 US"
+    }
+  },
+  {
+    "model": "web.size",
+    "pk": 2,
+    "fields": {
+      "name": "8.5 US"
+    }
+  },
+  {
+    "model": "web.size",
+    "pk": 3,
+    "fields": {
+      "name": "8 US"
+    }
+  },
+  {
+    "model": "web.color",
+    "pk": 1,
+    "fields": {
+      "name": "blanco",
+      "hexcolor": "#ffffff"
+    }
+  }
+]

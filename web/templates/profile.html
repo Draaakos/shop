@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block js %}
+<script>
+    window.serializedContent = {{ serializedContent }};
+</script>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/profile-page.css' %}" />
+{% endblock %}
+
+{% block content %}
+    <script defer src="{% static 'profile.bundle.js' %}"></script>
+{% endblock %}

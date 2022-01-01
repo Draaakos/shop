@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/register-page.css' %}" />
+{% endblock %}
+
+{% block content %}
+    <script defer src="{% static 'register.bundle.js'%}" ></script>
+{% endblock %}

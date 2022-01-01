@@ -1,0 +1,75 @@
+@import 'family-fonts'
+
+.pod
+    width 100%
+    height 100%
+    position relative
+
+    &__head
+        position relative
+
+        img
+            width 100%
+            height 100%
+
+        &__bar
+            color white
+            width 100%
+            position absolute
+            bottom 1em
+            left 0
+
+            .options
+                opacity 1
+                display flex
+                justify-content center
+                align-items center
+
+                .option
+                    background-color white
+                    height 45px
+                    width 45px
+                    display flex
+                    justify-content center
+                    align-items center
+                    margin 0 .5em
+                    border-radius 50%
+                    transition all .3s ease-in
+
+                    .fa
+                        color #333
+
+                    &:hover
+                        background-color #ca1515
+                        transition all .2s ease-in
+
+                        .fa
+                            color white
+
+                    &--liked
+                        background-color #ca1515
+
+                        .fa
+                            color white
+
+
+
+    &__body
+        margin-top 1em
+        text-align center
+        height 88px
+
+        &__name
+            font-size 14px
+            color #111
+            font-weight 400
+
+        &__stars
+            margin-bottom .5em
+
+            i
+                color #e3c01c
+
+        &__price
+            font-family "Montserrat", sans-serif
+            font-weight bold

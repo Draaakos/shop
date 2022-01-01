@@ -1,0 +1,7 @@
+{% load static %}
+
+<script src="{% static 'facebookLogin.bundle.js' %}"></script>
+
+<fb:login-button
+    scope="public_profile,email"
+    onlogin="checkLoginState();">Iniciar sesión con Facebook</fb:login-button>

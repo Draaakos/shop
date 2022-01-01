@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/home-page.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="banner">
+    <div class="grid-2 full-height">
+        <div class="background-img background-img__1 background-img__main">
+            <div class="float-text">
+               <div class="text">
+                    <div class="text__title">Moda Mujeres</div>
+                    <div class="text__description">
+                        Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore edolore magna aliquapendisse ultrices gravida.
+                    </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="background-img background-img__2">
+                <div class="float-text">
+                    <div class="text">
+                        <div class="text__title">Moda Hombres</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-img background-img__3">
+                <div class="float-text">
+                    <div class="text">
+                        <div class="text__title">Moda Niños</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-img background-img__4">
+                <div class="float-text">
+                    <div class="text">
+                        <div class="text__title">Cosmeticos</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background-img background-img__5">
+                <div class="float-text">
+                    <div class="text">
+                        <div class="text__title">Accessorios</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

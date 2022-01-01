@@ -1,0 +1,61 @@
+@import 'ui/navbar'
+@import 'ui/footer'
+@import 'ui/config'
+@import 'ui/breadcrumb'
+@import 'ui/gallery'
+@import 'ui/family-fonts'
+@import 'ui/color'
+@import 'ui/size'
+@import 'ui/quantity'
+
+.pdp
+    overflow hidden
+
+    &__detail
+        padding 1em
+
+        &__title
+            color #111
+            font-weight bold
+            font-size 24px
+
+        &__brand
+            color #444
+            font-weight 400
+            font-size 14px
+            margin-bottom 1em
+
+        &__stars
+            margin-bottom 1em
+
+            .fa
+                color #e3c01c
+
+        &__price
+            font-size 30px
+            font-weight 600
+            color #ca1515
+            margin-bottom 30px
+
+        &__description
+            color #444
+            margin-bottom 28px
+
+    &-options
+        display flex
+        align-items center
+        justify-content space-between
+
+
+@media screen and (min-width 1024px)
+    .pdp
+        padding 1em 100px
+        display grid
+        grid-template-columns repeat(2, 1fr)
+        grid-template-rows repeat(1, 40vw)
+        grid-gap 1em
+
+        &__detail
+            padding 0
+
+

@@ -1,0 +1,8 @@
+media-root
+node_modules
+public
+*.sqlite3
+*.pyc
+public
+shop/dev.py
+shop/dev.txt

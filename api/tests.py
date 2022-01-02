@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.test import TestCase
 from web.models import Customer
 from web.models import Category
-from web.models import Brand
+from web.models import Platform
 from web.models import Product
 from web.models import Purchase
 
@@ -11,7 +11,7 @@ from web.models import Purchase
 class PurchaseOrderTestCase(TestCase):
     def setUp(self):
         category = Category.objects.create(name='category')
-        brand = Brand.objects.create(name='brand')
+        platform = Platform.objects.create(name='steam')
         self.customer = Customer.objects.create(
             first_name='john',
             last_name='doe',
@@ -24,7 +24,7 @@ class PurchaseOrderTestCase(TestCase):
             price=20000,
             quantity=1,
             category=category,
-            brand=brand
+            platform=platform
         )
 
     def test_purchase_ok(self):

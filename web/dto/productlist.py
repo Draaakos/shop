@@ -1,6 +1,7 @@
 import json
 from django.urls import reverse
-
+from web.models import ProductPlatform
+from web.models import Stock
 
 class DTO:
     def __init__(self, products):
@@ -36,13 +37,25 @@ class _ProductDTO:
             'id': self.product.id,
             'name': self.product.name,
             'price': adjusted_price,
+            'platform': self._get_platforms(),
             'before_price': self.product.before_price,
-            'quantity': self.product.quantity,
+            'quantity': self._get_stock(),
             'description': self.product.description,
             'url': url,
             'sku': self.product.sku,
             'images': self._get_images(),
         }
+
+    def _get_stock(self):
+        return len(Stock.objects.filter(product=self.product))
+
+    def _get_platforms(self):
+        platform_list = []
+        for product_platform in ProductPlatform.objects.filter(product=self.product):
+            platform_list.append({
+                "name": product_platform.platform.name
+            })
+        return platform_list
 
     def _get_images(self):
         xs = []

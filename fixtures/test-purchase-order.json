@@ -3,14 +3,14 @@
     "model": "web.category",
     "pk": 1,
     "fields": {
-      "name": "sneakers"
+      "name": "pc"
     }
   },
   {
-    "model": "web.brand",
+    "model": "web.platform",
     "pk": 1,
     "fields": {
-      "name": "Nike"
+      "name": "Steam"
     }
   },
   {
@@ -24,7 +24,7 @@
       "category": 1,
       "size": 1,
       "color": 1,
-      "brand_id": 1,
+      "platform_id": 1,
       "description": "nike air force 01 Low white OG",
       "related_skus": null
     }

@@ -8,19 +8,67 @@
 @import 'ui/size'
 @import 'ui/quantity'
 
+
+
+.product-detail
+    color white
+
+
+.platform
+    margin-top 3em
+
+    &-section
+        display flex
+
+        &__item
+            width 50px
+            margin-right .5em
+
+            .icon
+                margin 0 auto
+
+.requeriments
+    font-family 'monserrat'
+    color white
+    min-height 300px
+    margin 4em 0
+    display flex
+    justify-content center
+    align-items center
+    background-color $color-tertiary
+    padding 2em
+
+    .item-wrapper
+        display flex
+        justify-content space-between
+
+    &__wrapper
+        min-width 900px
+        max-width 1000px
+
+    &__item
+        font-weight bold
+        font-size 1.2em
+
+    &__value
+        font-size 1.2em
+
+
+
+
 .pdp
+    color white
     overflow hidden
 
     &__detail
         padding 1em
 
         &__title
-            color #111
             font-weight bold
             font-size 24px
 
         &__brand
-            color #444
+            // color #444
             font-weight 400
             font-size 14px
             margin-bottom 1em
@@ -34,11 +82,9 @@
         &__price
             font-size 30px
             font-weight 600
-            color #ca1515
             margin-bottom 30px
 
         &__description
-            color #444
             margin-bottom 28px
 
     &-options
@@ -47,15 +93,24 @@
         justify-content space-between
 
 
+
+
+
 @media screen and (min-width 1024px)
-    .pdp
-        padding 1em 100px
+    .product-detail
         display grid
         grid-template-columns repeat(2, 1fr)
-        grid-template-rows repeat(1, 40vw)
-        grid-gap 1em
 
-        &__detail
-            padding 0
+    // .pdp
+
+
+    //     padding 1em 100px
+    //     display grid
+    //     grid-template-columns repeat(2, 1fr)
+    //     grid-template-rows repeat(1, 40vw)
+    //     gap 1em
+
+    //     &__detail
+    //         padding 0
 
 

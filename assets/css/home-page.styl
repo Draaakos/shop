@@ -1,6 +1,6 @@
+@import 'ui/config'
 @import 'ui/navbar'
 @import 'ui/footer'
-@import 'ui/config'
 @import 'ui/family-fonts'
 
 .carousel-root
@@ -14,7 +14,7 @@
             object-fit cover
 
 .page
-    background-color: #683fb3
+    background-color $color-primary
 
     &__wrapper
        max-width 1280px
@@ -30,9 +30,39 @@
     gap 1em
 
 .pod
+    position relative
+
+    &__shadow
+        background-color rgba(0, 0, 0, .5)
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+        z-index 1
+        display flex
+        justify-content center
+        align-items center
+
+        .sticker
+            padding 1em
+            background-color $color-tertiary
+            color white
+            border 1px solid white
+
+        &:hover
+            cursor not-allowed
+
+
     &__header
+        position relative
         min-height 250px
-        background-color: white
+        background-color white
+
+        &__icon
+            position absolute
+            left .5em
+            top .5em
 
         img
             height 250px
@@ -42,13 +72,14 @@
     &__body
         font-family 'monserrat'
         min-height 100px
-        background-color #463368
+        background-color $color-tertiary
         padding 1em
         color white
 
         &__name
             font-size .8em
             margin-bottom .5em
+            min-height 40px
 
         &__quantity
             font-family 'monserrat'
@@ -57,7 +88,7 @@
 
         &__price
             font-family 'monserrat'
-            color #29ff1b
+            color $color-secondary
             font-size 1.2em
 
             &-before

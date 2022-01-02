@@ -28,11 +28,38 @@ class Color(models.Model):
         return f'{self.id} -> {self.name}'
 
 
-class Brand(models.Model):
+class Platform(models.Model):
     name = models.CharField(max_length=50)
 
     def __str__(self):
         return f'{self.id} -> {self.name}'
+
+
+class Requeriment(models.Model):
+    minimun = models.CharField(max_length=200)
+    recommended = models.CharField(max_length=200)
+    so = models.CharField(max_length=50)
+    proccesor = models.CharField(max_length=50)
+    memory = models.CharField(max_length=50)
+    graphics = models.CharField(max_length=50)
+    storage = models.CharField(max_length=50)
+
+    def to_json(self):
+        return {
+            'minimun': self.minimun,
+            'recommended': self.recommended,
+            'so': self.so,
+            'proccesor': self.proccesor,
+            'memory': self.memory,
+            'graphics': self.graphics,
+            'storage': self.storage
+        }
+
+    def __str__(self):
+        return f'{self.id} -> {self.minimun}'
+
+    class Meta:
+        verbose_name = 'Requerimientos'
 
 
 class Product(models.Model):
@@ -41,12 +68,14 @@ class Product(models.Model):
     price = models.FloatField()
     before_price = models.FloatField(default=0)
     quantity = models.IntegerField()
-    brand = models.ForeignKey(Brand, on_delete=models.CASCADE)
+    # platform = models.ForeignKey(Platform, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     size = models.ForeignKey(Size, on_delete=models.CASCADE, null=True, blank=True)
     color = models.ForeignKey(Color, on_delete=models.CASCADE, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     related_skus = models.CharField(max_length=500, null=True, blank=True)
+    requeriment = models.ForeignKey(Requeriment, on_delete=models.CASCADE, null=True, blank=True)
+
 
     def discount_quantity(self, quantity):
         if self.quantity < quantity:
@@ -60,6 +89,11 @@ class Product(models.Model):
 
     class Meta:
         verbose_name = 'Producto'
+
+
+class ProductPlatform(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    platform = models.ForeignKey(Platform, on_delete=models.CASCADE)
 
 
 class ProductImage(models.Model):
@@ -121,3 +155,15 @@ class PurchaseDetail(models.Model):
 
     class Meta:
         verbose_name = 'Detalle de compra'
+
+
+class Stock(models.Model):
+    product_key = models.CharField(max_length=200)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True, blank=True)
+    status = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f'{self.id} -> {self.product_key}'
+
+    class Meta:
+        verbose_name = 'Stock'

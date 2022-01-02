@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 import thousandFormat from 'utils/thousandFormat';
 import service from 'services/product';
-import Color from './components/Color';
-import Size from './components/Size';
 import Gallery from './components/Gallery';
 import { notify } from 'utils/notifications';
 
@@ -11,57 +9,14 @@ const Pdp = ({ initialData }) => {
   const [product, updateProduct] = useState(initialData)
   const [imageSelected, updateImageSelected] = useState(0);
   const [skuSelected, updateSku] = useState(null)
-  const [colorSelected, updateColor] = useState(null);
-  const [sizeSelected, updateSize] = useState(null);
-  const [variations, updateVariations] = useState(initialData.variations);
-  const [isReadyForBuy, updateIsReady] = useState(false);
-  const [quantity, updateQuantity] = useState(1);
+  const [quantity, updateQuantity] = useState(0);
 
-  const checkProductData = () => {
-    const { colors, sizes } = product.variations;
-    /**
-     * Validación para:
-     * - 1 variación de color y 1 de tamaño
-     * - solo 1 variación de color sin tamaño
-     * - solo 1 variación de tamaño sin color
-     *
-     * Asigna sku automaticamente cuando carga el componente
-    */
-    if(
-      (!colors.length && !sizes.length) ||
-      (colors.length === 1 && !sizes.length) ||
-      (sizes.length === 1 && !colors.length)
-    ) {
+  useEffect(() => {
+    if(product.quantity) {
       updateSku(product.sku);
-      updateIsReady(true);
-
-      if(colors.length === 1 && !sizes.length) {
-        updateColor(product.relatedSkus[0].variations.color.name);
-      }
-
-      if(sizes.length === 1 && !colors.length) {
-        updateSize(product.relatedSkus[0].variations.size.name);
-      }
-
-      return;
-    };
-  }
-
-  useEffect(() => checkProductData(), []);
-
-  const updateData = sku => {
-    service.productSku(sku)
-      .then(response => {
-          if(quantity > response.product.quantity) updateQuantity(response.product.quantity);
-
-          response.product.variations.colors.sort((a,b) => (a.name > b.name)
-            ? 1 : ((b.name > a.name) ? -1 : 0));
-
-          updateSku(response.product.sku);
-          updateProduct(response.product);
-        }
-      );
-  };
+      updateQuantity(1);
+    }
+  }, []);
 
   const onChangeQuantity = number => {
     const newQuantity = quantity + number;
@@ -71,72 +26,6 @@ const Pdp = ({ initialData }) => {
     updateQuantity(quantity + number);
   };
 
-  const onSelectColor = color => {
-    return () => {
-      const newSizeVariations = []
-      const productFiltered = product.relatedSkus
-        .filter(element => {
-          if(element.variations.color.name === color) {
-            newSizeVariations.push({ name: element.variations.size.name })
-            return element;
-          }
-        });
-
-      const sizesFilter = product.relatedSkus
-        .filter(element => element.variations.color.name === color)
-
-      /**
-       * Si el color seleccionado solo tiene una variacion de talla
-       * esta queda seleccionada automaticamente
-      */
-      if(sizesFilter.length === 1) {
-        updateSize(sizesFilter[0].variations.size.name);
-        updateIsReady(true);
-      } else {
-        updateSize(null);
-        updateIsReady(false);
-      }
-
-      updateColor(color);
-      updateData(productFiltered[0].sku);
-
-      updateVariations({
-        sizes: newSizeVariations,
-        colors: product.variations.colors
-      });
-    }
-  }
-
-  const onSelectSize = size => {
-    return () => {
-      if(product.variations.colors.length <= 1) {
-        const findProduct = product.relatedSkus
-          .find(element => element.variations.size.name === size);
-
-        updateSku(findProduct.sku);
-        updateColor(findProduct.variations.color.name)
-        updateIsReady(true);
-        return;
-      }
-
-      if(product.variations.sizes.length && product.variations.colors.length) {
-        if(!colorSelected) return;
-
-        const findProduct = product.relatedSkus
-          .find(element =>
-            element.variations.size.name === size &&
-            element.variations.color.name === colorSelected
-          );
-
-        if(findProduct) {
-          updateSku(findProduct.sku)
-          updateIsReady(true);
-        }
-      }
-
-      updateSize(size);
-    }
-  };
 
   const onAddToCar = () => {
     if(skuSelected) {
@@ -164,31 +53,17 @@ const Pdp = ({ initialData }) => {
 
   const buttonClasses = classNames({
     'default-button': true,
-    'default-button--disabled': !isReadyForBuy || !skuSelected
+    'default-button--disabled': !skuSelected || !skuSelected
   });
 
-  const addEvent = isReadyForBuy ? onAddToCar : () => {};
+  const addEvent = skuSelected ? onAddToCar : () => {};
 
-  const colors = product.variations.colors.length && (
-    <div>
-      <span className="strong">Color: </span> {colorSelected}
-      <Color
-        colorList={variations.colors}
-        onClick={onSelectColor}
-      />
+  const platformList = product.platform.map((item, index) => (
+    <div key={`platform-${index}`} className="platform-section__item">
+      <div className={`icon icon--${item.name.toLowerCase()}-white`} />
+      {/* <div>{item.name}</div> */}
     </div>
-  );
-
-  const sizes = product.variations.sizes.length && (
-    <div>
-      <span className="strong">Talla: </span> {sizeSelected}
-      <Size
-        sizeSelected={sizeSelected}
-        sizeList={variations.sizes}
-        onClick={onSelectSize}
-      />
-    </div>
-  );
+  ));
 
   return(
     <section className="page-wrapper">
@@ -209,55 +84,81 @@ const Pdp = ({ initialData }) => {
         </div>
       </div>
 
-      <div className="pdp-page">
-        <div className="pdp">
-          <Gallery
-            images={product.images}
-            imageSelected={imageSelected}
-            onClick={updateImageSelected}
-          />
+      <div className="product-detail">
+        <Gallery
+          images={product.images}
+          imageSelected={imageSelected}
+          onClick={updateImageSelected}
+        />
 
-          <div className="pdp__detail">
-            <div className="pdp__detail__title">{product.name}</div>
-            <div className="pdp__detail__brand">{product.brand}</div>
-            {/* <div className="pdp__detail__stars">
-              <i className="fa fa-star" aria-hidden="true"></i>
-              <i className="fa fa-star" aria-hidden="true"></i>
-              <i className="fa fa-star" aria-hidden="true"></i>
-              ( 138 reviews )
-            </div> */}
-            <div className="pdp__detail__price">$ {thousandFormat(product.price, 0)}</div>
-            <div className="pdp__detail__description">{product.description}</div>
-            <div className="pdp-options">
-              <div className="quantity-block">
-                <div className="quantity-block__label">Cantidad</div>
-                <div className="quantity">
-                  <div className="quantity__element quantity__button" onClick={() => onChangeQuantity(-1)}>-</div>
-                  <div className="quantity__element">{quantity}</div>
-                  <div className="quantity__element quantity__button" onClick={() => onChangeQuantity(1)}>+</div>
-                </div>
-              </div>
-
-
-              <div>
-                <button
-                  className={buttonClasses}
-                  onClick={addEvent}
-                >
-                  comprar
-                </button>
+        <div className="pdp__detail">
+          <div className="pdp__detail__title">{product.name}</div>
+          <div className="pdp__detail__brand">{product.brand}</div>
+          {/* <div className="pdp__detail__stars">
+            <i className="fa fa-star" aria-hidden="true"></i>
+            <i className="fa fa-star" aria-hidden="true"></i>
+            <i className="fa fa-star" aria-hidden="true"></i>
+            ( 138 reviews )
+          </div> */}
+          <div className="pdp__detail__price">{thousandFormat(product.price, 0)} CLP</div>
+          <div className="pdp__detail__description">{product.description}</div>
+          <div className="pdp-options">
+            <div className="quantity-block">
+              <div className="quantity-block__label">Cantidad</div>
+              <div className="quantity">
+                <div className="quantity__element quantity__button" onClick={() => onChangeQuantity(-1)}>-</div>
+                <div className="quantity__element">{quantity}</div>
+                <div className="quantity__element quantity__button" onClick={() => onChangeQuantity(1)}>+</div>
               </div>
             </div>
 
-            <hr />
 
             <div>
-              <span className="strong">Stock: </span>
-              {product.quantity} unidades.
+              <button
+                className={buttonClasses}
+                onClick={addEvent}
+              >
+                comprar
+              </button>
             </div>
+          </div>
 
-            {colors}
-            {sizes}
+          <hr />
+
+          <div className="platform">
+            <h4>Plataformas disponibles</h4>
+            <div className="platform-section">
+              { platformList }
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="requeriments">
+        <div className="requeriments__wrapper">
+          <div className="item-wrapper">
+            <div className="requeriments__item">Minimo:</div>
+            <div className="requeriments__value">{product.requeriment.minimun}</div>
+          </div>
+          <div className="item-wrapper">
+            <div className="requeriments__item">Recomendado:</div>
+            <div className="requeriments__value">{product.requeriment.recommended}</div>
+          </div>
+          <div className="item-wrapper">
+            <div className="requeriments__item">Sistema Operativo:</div>
+            <div className="requeriments__value">{product.requeriment.so}</div>
+          </div>
+          <div className="item-wrapper">
+            <div className="requeriments__item">Procesador:</div>
+            <div className="requeriments__value">{product.requeriment.proccesor}</div>
+          </div>
+          <div className="item-wrapper">
+            <div className="requeriments__item">Graficos:</div>
+            <div className="requeriments__value">{product.requeriment.graphics}</div>
+          </div>
+          <div className="item-wrapper">
+            <div className="requeriments__item">Espacio:</div>
+            <div className="requeriments__value">{product.requeriment.storage}</div>
           </div>
         </div>
       </div>

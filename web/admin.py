@@ -7,7 +7,10 @@ from web.models import Size
 from web.models import Color
 from web.models import Purchase
 from web.models import PurchaseDetail
-from web.models import Brand
+from web.models import Platform
+from web.models import ProductPlatform
+from web.models import Requeriment
+from web.models import Stock
 
 
 class InlineImages(admin.StackedInline):
@@ -38,9 +41,8 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'before_price',
         'quantity',
-        'size',
-        'color',
         'category',
+        'requeriment',
         'related_skus'
     ]
     list_editable = [
@@ -49,9 +51,8 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'before_price',
         'quantity',
-        'size',
-        'color',
         'category',
+        'requeriment',
         'related_skus'
     ]
     list_filter = ['category']
@@ -94,8 +95,29 @@ class PurchaseAdmin(admin.ModelAdmin):
     inlines = [InlinePurchaseDetail]
 
 
-@admin.register(Brand)
-class BrandAdmin(admin.ModelAdmin):
+@admin.register(Platform)
+class PlatformAdmin(admin.ModelAdmin):
     ordering = ['id']
     list_display = ['id', 'name']
     list_editable = ['name']
+
+
+@admin.register(ProductPlatform)
+class ProductPlatformAdmin(admin.ModelAdmin):
+    ordering = ['id']
+    list_display = ['id', 'product', 'platform']
+    list_editable = ['product', 'platform']
+
+
+@admin.register(Requeriment)
+class RequerimentAdmin(admin.ModelAdmin):
+    ordering = ['id']
+    list_display = ['id', 'minimun', 'recommended', 'so', 'proccesor', 'memory', 'graphics', 'storage']
+    list_editable = ['minimun', 'recommended', 'so', 'proccesor', 'memory', 'graphics', 'storage']
+
+
+@admin.register(Stock)
+class StockAdmin(admin.ModelAdmin):
+    ordering = ['id']
+    list_display = ['id', 'product_key', 'product', 'status']
+    list_editable = ['product_key', 'product', 'status']

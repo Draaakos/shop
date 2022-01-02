@@ -1,5 +1,6 @@
 import json
-from web.models import Product
+from web.models import Product, ProductPlatform
+from web.models import Stock
 
 
 class DTO:
@@ -15,17 +16,33 @@ class DTO:
         output = {
             'id': self.product.id,
             'sku': self.product.sku,
-            'brand': self.product.brand.name,
+            'platform': self._get_platforms(),
+            'category': self.product.category.name,
             'price': product_price,
             'name': self.product.name,
             'description': self.product.description,
-            'quantity': self.product.quantity,
+            'quantity': self._get_stock(),
             'variations': self._get_unique_variations(related_skus),
             'relatedSkus': related_skus,
-            'images': images
+            'images': images,
+            'requeriment': self.product.requeriment.to_json()
         }
 
         return json.dumps(output)
+
+
+    def _get_stock(self):
+        return len(Stock.objects.filter(product=self.product))
+
+
+    def _get_platforms(self):
+        platform_list = []
+        for product_platform in ProductPlatform.objects.filter(product=self.product):
+            platform_list.append({
+                "name": product_platform.platform.name
+            })
+        return platform_list
+
 
     def _get_related_skus(self):
         elements = []

@@ -17,16 +17,18 @@ const VerticalItem = ({ url, onClick, isImageSelected }) => {
 const Gallery = ({ images, imageSelected, onClick }) => {
   return (
     <div className="gallery">
-      <img src={images[imageSelected].url} alt="" />
-      <div className="gallery__menu">
-        { images.map((data, index) => (
-          <VerticalItem
-            url={data.url}
-            key={`vertical-${index}`}
-            onClick={() => onClick(index)}
-            isImageSelected={!!(imageSelected === index)}
-          />)
-        )}
+      <div className="gallery__wrapper">
+        <img src={images[imageSelected].url} alt="" />
+        <div className="gallery__menu">
+          { images.map((data, index) => (
+            <VerticalItem
+              url={data.url}
+              key={`vertical-${index}`}
+              onClick={() => onClick(index)}
+              isImageSelected={!!(imageSelected === index)}
+            />)
+          )}
+        </div>
       </div>
     </div>
   )

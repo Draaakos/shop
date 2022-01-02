@@ -31,10 +31,10 @@ const Pod = ({ data }) => {
   )
 };
 
-const Home = ({ products }) => (
+const Home = ({ products, sliderItemList }) => (
   <div className="page">
     <div className="page__slider">
-      <Slider />
+      <Slider itemList={sliderItemList} />
     </div>
 
     <h3 className="title">Productos disponibles</h3>

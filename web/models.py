@@ -1,7 +1,21 @@
 import uuid
 from django.db import models
-from web.utils import define_product_path
+from web.utils import define_product_path, define_slider_path
 from web.exceptions.model import NotEnoughQuantityError
+
+class Slider(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.ImageField(null=True, blank=True, upload_to=define_slider_path)
+
+    def __str__(self):
+        return f'{self.id} -> {self.name}'
+
+    def to_json(self):
+        return {
+            'id': self.id,
+            'url': self.image.url
+        }
+
 
 class Category(models.Model):
     name = models.CharField(max_length=50)

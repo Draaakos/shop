@@ -11,6 +11,7 @@ from web.models import Platform
 from web.models import ProductPlatform
 from web.models import Requeriment
 from web.models import Stock
+from web.models import Slider
 
 
 class InlineImages(admin.StackedInline):
@@ -21,6 +22,13 @@ class InlineImages(admin.StackedInline):
 class InlinePurchaseDetail(admin.StackedInline):
     model = PurchaseDetail
     extra = 3
+
+
+@admin.register(Slider)
+class SliderAdmin(admin.ModelAdmin):
+    ordering = ['id',]
+    list_display = ['id', 'image']
+    list_editable = ['image']
 
 
 @admin.register(Category)
@@ -63,7 +71,7 @@ class ProductAdmin(admin.ModelAdmin):
 class ProductImageAdmin(admin.ModelAdmin):
     ordering = ['id']
     list_display = ['is_default', 'product', 'image']
-    list_filter = ['product']
+    list_filter = ['product', 'image']
 
 
 @admin.register(Customer)

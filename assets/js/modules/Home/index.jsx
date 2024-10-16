@@ -1,11 +1,25 @@
-import React, { Component } from 'react';
+import Menu from 'ui/Menu';
+import Carousel from 'ui/Carousel';
 
-class Home extends Component {
-  render() {
-    return(
-      <div></div>
-    );
-  }
-}
+const HomeApp = () => {
+  const images = [
+    `/static/${VERSION}/images/slider/item-1.png`,
+    `/static/${VERSION}/images/slider/item-1.png`,
+    `/static/${VERSION}/images/slider/item-1.png`,
+    `/static/${VERSION}/images/slider/item-1.png`,
+    `/static/${VERSION}/images/slider/item-1.png`,
+    `/static/${VERSION}/images/slider/item-1.png`,
+    `/static/${VERSION}/images/slider/item-1.png`,
+    `/static/${VERSION}/images/slider/item-1.png`,
+    `/static/${VERSION}/images/slider/item-1.png`
+  ];
 
-export default Home;
+  return (
+    <div>
+      <Menu />
+      <Carousel images={images}/>
+    </div>
+  );
+};
+
+export default HomeApp;

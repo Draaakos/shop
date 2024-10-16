@@ -1,95 +1,13 @@
-@import 'spinner'
-@import 'horizontal-pod'
-
-.app
-    z-index 0
-
-.page-wrapper
-    min-height 90vh
-
-.pdp-page
-    max-width 1270px
-    margin 0 auto
-
-.grid
-    &-2
-        display block
-
-    &-3
-        display block
+@require 'modal'
 
 
-a:hover
-    color #333
-    text-decoration none
-
-
-.wrapper-link
-    color #333
-
-
-
-
-.default-button
-    background-color #ca1515
-    border-radius 50px
-    padding 14px 30px 15px
-    font-weight 600
-    color #fff
+html
     font-size 14px
+
+*
+    box-sizing border-box
+
+body
     border 0
-    text-transform uppercase
-    text-align center
-
-    &--disabled
-        opacity .4
-
-    &:focus
-        outline none
-
-
-
-.close-button
-    background-color #f2f2f2
-    border-radius 50%
-    height 45px
-    width 45px
-    display flex
-    align-items center
-    justify-content center
-    border 0
-    transition all .3s ease-in-out
-
-    &:hover
-        transition all .2s ease-in-out
-        cursor pointer
-        background-color #ca1515
-
-        .fa
-            color white
-
-    &:focus
-        outline none
-
-
-.strong
-    font-weight bold
-
-@media screen and (min-width 1024px)
-    .grid
-        &-2
-            display grid
-            grid-template-columns repeat(2, 1fr)
-            grid-gap 10px
-
-        &-3
-            display grid
-            grid-template-columns repeat(3, 1fr)
-
-        &-4
-            display grid
-            grid-template-columns repeat(4, 1fr)
-
-    .full-height
-        height calc(100vh - 90px)
-        max-height 600px
+    margin 0
+    padding 0

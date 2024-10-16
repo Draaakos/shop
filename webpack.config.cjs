@@ -62,11 +62,12 @@ const getConfig = async (env = { mode: 'development' }) => {
     ]
   };
 
-  // Production-specific configurations
   if (env.mode === 'production') {
     config.cache = false;
     config.optimization = {
-      minimizer: [new CssMinimizerPlugin()],
+      minimizer: [
+        new CssMinimizerPlugin(),
+      ],
       splitChunks: {
         chunks: 'all',
         name: 'vendor'

@@ -1,8 +1,9 @@
 media-root
 node_modules
 public
+static
 *.sqlite3
 *.pyc
-public
 shop/dev.py
 shop/dev.txt
+env

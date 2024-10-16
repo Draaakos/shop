@@ -1,4 +1,4 @@
-import React from 'react';
+
 import HorizontalPod from 'ui/HorizontalPod';
 
 const History = ({ historyList }) => (

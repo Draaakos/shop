@@ -1,4 +1,3 @@
-import React from 'react';
 import classNames from 'classnames';
 import thousandFormat from 'utils/thousandFormat';
 import { askForConfirm, notify } from 'utils/notifications';

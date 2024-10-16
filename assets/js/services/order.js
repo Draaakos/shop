@@ -1,4 +1,4 @@
-import { post } from './fetchUtil';
+import { post } from './fetchUtil.js';
 
 const service = {
   newOrder(payload) {

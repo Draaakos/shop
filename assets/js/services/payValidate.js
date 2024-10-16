@@ -1,4 +1,4 @@
-import { get } from './fetchUtil';
+import { get } from './fetchUtil.js';
 
 const service = {
   checkStatusPayment(purchaseId) {

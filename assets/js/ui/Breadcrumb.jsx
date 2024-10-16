@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const Item = ({ data, isLastItem }) => (
   <a href={data.url} className="breadcrumb__item">

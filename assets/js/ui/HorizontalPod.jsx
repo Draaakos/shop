@@ -1,4 +1,4 @@
-import React from 'react';
+
 import thousandFormat from 'utils/thousandFormat';
 
 const HorizontalPod = ({ data }) => (

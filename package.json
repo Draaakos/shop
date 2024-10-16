@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predev": "bash ./bin/copy-assets.sh",
     "dev": "npm run copy:assets & npm run compile:js & npm run compile:styles",
     "copy:assets": "sh .bin/copy-assets.sh",
-    "compile:js": "webpack --progress --colors --env.mode=development --watch",
-    "compile:styles": "stylus --watch ./assets/css/*-page.styl --out ./public/css/."
+    "compile:js": "webpack --config webpack.config.cjs --progress --env mode=development --watch",
+    "compile:styles": "stylus --watch ./assets/css/*-page.styl --out ./static/$(cat bin/hash.txt)/css/."
   },
   "repository": {
     "type": "git",
@@ -22,17 +24,20 @@
   },
   "homepage": "https://github.com/aether7/shop#readme",
   "dependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/preset-env": "^7.10.2",
-    "@babel/preset-react": "^7.10.1",
-    "babel-loader": "^8.1.0",
-    "babel-polyfill": "^6.26.0",
-    "classnames": "^2.2.6",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "stylus": "^0.54.8",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "classnames": "^2.5.1",
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "mini-css-extract-plugin": "^2.7.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "style-loader": "^3.2.1",
+    "stylus": "^0.63.0",
+    "webpack": "^5.22.0",
+    "webpack-cli": "^4.5.0"
   }
 }

@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
+import Image from './Image/index.jsx';
 import css from './index.css';
+
+const MAX_WIDTH = 1024
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,9 +11,15 @@ const Carousel = ({ images }) => {
   // Función para iniciar el intervalo
   const startInterval = () => {
     intervalRef.current = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % Math.ceil(images.length / (window.innerWidth < 768 ? 1 : 3))); // Cambia el índice según el total de bloques
+
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % Math.ceil(images.length / (window.innerWidth < 768 ? 1 : 1)));
     }, 4000);
   };
+
+  if(window.innerWidth > 768 && currentIndex >= 7) {
+    setCurrentIndex(0)
+  }
+
 
   // Función para detener el intervalo
   const stopInterval = () => {
@@ -34,11 +43,11 @@ const Carousel = ({ images }) => {
   };
 
   const getWrapperStyle = () => {
-    const imagesToShow = window.innerWidth < 768 ? 1 : 3; // Número de imágenes a mostrar según el tamaño de pantalla
+    const imagesToShow = window.innerWidth < 768 ? 1 : 3;
     return {
       display: 'flex',
-      width: `${(Math.ceil(images.length / imagesToShow) * 100)}%`, // Ancho total según el número de bloques
-      transform: `translateX(-${(currentIndex * (100 / Math.ceil(images.length / imagesToShow)))}%)`, // Mueve el carrusel
+      width: `${(Math.ceil(images.length / imagesToShow) * 100)}%`,
+      transform: `translateX(-${(currentIndex * (100 / Math.ceil(images.length / imagesToShow))) / (window.innerWidth < 768 ? 1 : 3)}%)`, // Mueve el carrusel
     };
   };
 
@@ -48,14 +57,15 @@ const Carousel = ({ images }) => {
     items.push(
       <div className={css.imageContainer} key={i}>
         {images.slice(i, i + (window.innerWidth < 768 ? 1 : 3)).map((image, index) => (
-          <img className={css.image} src={image} alt={`Carousel ${i + index}`} key={index} />
+          <Image src={image} text="DESTACADO" />
+          // <img className={css.image} src={image} alt={`Carousel ${i + index}`} key={index} />
         ))}
       </div>
     );
   }
 
   // Calcular la cantidad de puntos en función de las imágenes
-  const totalDots = Math.ceil(images.length / (window.innerWidth < 768 ? 1 : 3));
+  const totalDots = window.innerWidth < 768 ? Math.ceil(images.length / 1) : images.length - 2;
 
   return (
     <div className={css.carousel}>

@@ -13,11 +13,11 @@
     display: flex;
 }
 
-.image {
+/* .image {
     width: 100vw;
     height: 400px;
     object-fit: cover;
-}
+} */
 
 /* Estilos para los puntos de navegación */
 .dotsContainer {
@@ -44,7 +44,7 @@
 }
 
 /* Media Queries para pantallas más grandes */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .imageContainer {
         flex: 0 0 33.33%; /* Cada imagen ocupa un tercio en pantallas más grandes */
     }

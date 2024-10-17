@@ -1,8 +1,29 @@
 @import 'ui/index'
 
 
+.card__section
+    display grid
+    gap 2.5em
+    margin 1em auto
+    padding 1em
+
+
+.publication__section
+    .publication
+        padding 1em
+
+
+.card__section,
+.publication__section
+    max-width 900px
+    margin 3em auto
+
+
 @media screen and (min-width 1024px)
     .banner
         .background-img
             margin-bottom 0
             height auto
+
+    .card__section
+        grid-template-columns repeat(3, 1fr)

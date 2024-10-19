@@ -11,6 +11,10 @@ const Publication = ({ data }) => {
       <div className='publication__content'>
         {data.content}
       </div>
+
+      <div className='publication__button'>
+        <div className='publication__button__item'>Continuar leyendo</div>
+      </div>
     </div>
   )
 };

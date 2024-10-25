@@ -29,7 +29,7 @@ const HomeApp = () => {
     <div>
       <Carousel images={images}/>
       <Menu onSelect={actions.onSelectOptionMenu}/>
-      <div className='card__section'>
+      <div className="card__section">
         <Card text="OFERTA 1" backgroundImg={`/static/${VERSION}/images/cards/item-1.jpg`} />
         <Card text="OFERTA 2" backgroundImg={`/static/${VERSION}/images/cards/item-1.jpg`} />
         <Card text="OFERTA 3" backgroundImg={`/static/${VERSION}/images/cards/item-1.jpg`} />

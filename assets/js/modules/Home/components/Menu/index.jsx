@@ -1,19 +1,36 @@
+import { useState } from 'react';
+import classNames from 'classnames';
 import Option from './Option.jsx';
 import css from './index.css';
 
 
 const Menu = ({ onSelect }) => {
-  const data = [
+  const [ menuActive, setMenuActive ] = useState(false);
+
+  const classes = classNames({
+    [css.menu]: true,
+    [css.menu__active]: menuActive
+  });
+
+  const filters = [
     {
-      title: "Option 1",
+      title: "Estres",
       filter: ""
     },
     {
-      title: "Option 2",
+      title: "Insonmio",
       filter: ""
     },
     {
-      title: "Option 3",
+      title: "Cansancio",
+      filter: ""
+    },
+    {
+      title: "Option 4",
+      filter: ""
+    },
+    {
+      title: "Option 4",
       filter: ""
     },
     {
@@ -22,13 +39,21 @@ const Menu = ({ onSelect }) => {
     }
   ];
 
-  const options = data
+  const options = filters
     .map((option, idx) =>
-      <Option onClick={onSelect(option)} key={`option-${idx}`} text={option.title}
-    />
+      <Option
+        onClick={onSelect(option)}
+        key={`option-${idx}`}
+        text={option.title}
+      />
   );
 
-  return <div className={css.menu}>{options}</div>;
+  return (
+    <div className={classes}>
+      <div>{options}</div>
+      <div onClick={() => setMenuActive(!menuActive)}>X</div>
+    </div>
+  );
 };
 
 export default Menu;

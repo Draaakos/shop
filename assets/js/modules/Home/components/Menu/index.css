@@ -3,18 +3,28 @@
     font-family: "Raleway Medium", sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 10%;
+    left: -7%;
     z-index: 1;
-    height: 0;
+    height: 10px;
     margin-top: 3em;
+    background-color: red;
+    border: 1px solid red;
+    display: flex;
+    transition: all .5s ease-in-out;
+}
+
+.menu__active {
+    left: 0;
+    transition: all .5s ease-in-out;
 }
 
 .option {
-    background-color: transparent;
+    background-color: white;
     padding: .5em 1em;
     transition: background-color .3s ease;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 .option:hover {

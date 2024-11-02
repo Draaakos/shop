@@ -1,0 +1,530 @@
+[
+  {
+    "name": "Lavender",
+    "origin": "Francia, Bulgaria",
+    "security": "Para uso aromático, tópico e interno. Diluye para piel sensible.",
+    "application": [
+      {
+         "name": "Insomnio",
+         "tag": ["Insomnio"],
+         "description": "Aplica debajo de la nariz, debajo de los pies o difunde en el aire para favorecer un sueño mas profundo."
+      },
+      {
+        "name": "Estrés y Ansiedad",
+        "tag": ["Estrés", "Ansiedad"],
+        "description": "Aplica en el corazón, detrás del cuello, o inhala desde tus manos juntas."
+      },
+      {
+        "name": "Relajación",
+        "tag": ["Relajación"],
+        "description": "Date un baño de tina caliente con sales naturales y unas gotas de Lavanda antes de acostarte."
+      },
+      {
+        "name": "Quemaduras (fuego o sol) y cicatrices",
+        "tag": ["Quemaduras (fuego)", "Quemaduras (sol)", "Cicatrices"],
+        "description": "Aplica en el área afectada para calmar, sanar y reducir cicatriz. Puedes aplicar sin dilución."
+      },
+      {
+        "name": "Cólicos y bebes alterados",
+        "tag": ["Cólicos"],
+        "description": "Masajea diluido en la columna, el abdomen o debajo de los pies para calmar."
+      },
+      {
+        "name": "Cortes, heridas o ampollas",
+        "tag": ["Cortes", "Heridas", "Ampollas"],
+        "description": "Aplica en el sitio afectado para limpiar, desinfectar, sanar y limitar o evitar cicatrices."
+      },
+      {
+        "name": "Picaduras de insectos y urticaria",
+        "tag": ["Picaduras", "Urticaria"],
+        "description": "Aplica directamente en el sitio para calmar como un antihistamínico natural."
+      },
+      {
+        "name": "Hemorragia nasal",
+        "tag": ["Hemorragia nasal"],
+        "description": "Aplica tópicamente en el puente de la nariz o alrededor de los ojos."
+      },
+      {
+        "name": "Presión sanguínea alta",
+        "tag": ["Presión sanguínea alta"],
+        "description": "Masajea en el corazón o toma en cápsula."
+      },
+      {
+        "name": "Migrañas y dolor de cabeza",
+        "tag": ["Migrañas", "Dolor de cabeza"],
+        "description": "Inhala y aplica en las sienes y detrás del cuello."
+      },
+      {
+        "name": "Balance emocional",
+        "tag": ["Balance emocional"],
+        "description": "Usa aromáticamente y tópicamente para sentirte más relajado, expresivo, honesto, escuchado y tener comunicación más abierta."
+      }
+    ],
+    "categories": [
+      "Sedativo",
+      "Astringente",
+      "Antihistamínico",
+      "Citófilo",
+      "Antiespasmódico",
+      "Antidepresivo",
+      "Analgésico",
+      "hipotensivo",
+      "Calmante",
+      "Antibacteriano",
+      "Cardiotónico"
+    ]
+  },
+  {
+    "name": "Lemon",
+    "origin": "Italia",
+    "security": "Para uso aromático, tópico e interno. Evitar la exposición al sol después del uso tópico.",
+    "application": [
+      {
+        "name": "Cálculos biliares y renales",
+        "tag": ["Cálculos biliares", "Cálculos renales"],
+        "description": "Aplica diluido en el área afectada. Ingiere un par de gotas en un vaso de agua o en una capsula vegetal para romper los cálculos."
+      },
+      {
+        "name": "Concentración",
+        "tag": ["Concentración"],
+        "description": "Inhala o difunde con Romero o Menta."
+      },
+      {
+        "name": "Edema y retención de líquido",
+        "tag": ["Edema", "Retención de líquido"],
+        "description": "Toma en una cápsula o masajea en las piernas y debajo de los pies."
+      },
+      {
+        "name": "Acidez y reflujo",
+        "tag": ["Acidez", "Reflujo"],
+        "description": "Toma con aceite esencial de Jengibre en una cápsula o vaso de agua."
+      },
+      {
+        "name": "Congestión y mucosidad",
+        "tag": ["Congestión", "Mucosidad"],
+        "description": "Masajea en el pecho con Incienso o difunde en el ambiente con Menta."
+      },
+      {
+        "name": "Resfriado, catarro, alergias",
+        "tag": ["Resfriado", "Catarro", "Alergias"],
+        "description": "Toma en una cápsula con Lavanda y Menta."
+      },
+      {
+        "name": "Desintoxicación del hígado y riñones",
+        "tag": ["Desintoxicación del hígado", "Desintoxicación de riñones"],
+        "description": "Toma en un vaso de agua o aplica tópicamente debajo de los pies."
+      },
+      {
+        "name": "Dolor de garganta",
+        "tag": ["Dolor de garganta"],
+        "description": "Aplica tópicamente Limón e Incienso en el área de la garganta o toma una gota en una cucharada de miel."
+      },
+      {
+        "name": "Desengrasante",
+        "tag": ["Desengrasante"],
+        "description": "Usa 20-30 gotas en una botellita spray con 250 ml de agua y vinagre para limpiar superficies."
+      },
+      {
+        "name": "Venas varicosas",
+        "tag": ["Venas varicosas"],
+        "description": "Aplica tópicamente con el aceite esencial de Ciprés diluido en aceite de coco fraccionado."
+      },
+      {
+        "name": "Saborizante natural",
+        "tag": ["Saborizante natural"],
+        "description": "Agrega en tu agua, té, pescados, hummus, tarta, o lo que se te ocurra para reemplazar la ralladura de limón."
+      },
+      {
+        "name": "Balance emocional",
+        "tag": ["Balance emocional"],
+        "description": "Usa aromáticamente y tópicamente para sentirte enfocado, mentalmente conectado, alerto y claro."
+      }
+    ],
+    "categories": [
+      "Antiséptico",
+      "Antioxidante",
+      "Antibacteriano",
+      "Mucolítico",
+      "Desintoxicante",
+      "Diurético",
+      "Desinfectante",
+      "Astringente",
+      "Desengrasante"
+    ]
+  },
+  {
+    "name": "Peppermint",
+    "origin": "USA",
+    "security": "Uso aromático, tópico e interno. Diluye para aplicación tópica.",
+    "application": [
+      {
+        "name": "Energía y atención",
+        "tag": ["Energía", "Atención"],
+        "description": "Inhala o aplica debajo de la nariz o detrás del cuello, siempre diluido en aceite de coco fraccionado."
+      },
+      {
+        "name": "Fiebres y sofocos",
+        "tag": ["Fiebres", "Sofocos"],
+        "description": "Aplica tópicamente detrás del cuello, de la columna vertebral, o debajo de los pies para un efecto refrescante."
+      },
+      {
+        "name": "Quemaduras o insolación",
+        "tag": ["Quemaduras", "Sofocos"],
+        "description": "Aplica con Lavanda diluido en aceite de coco fraccionado directamente en la piel quemada."
+      },
+      {
+        "name": "Problemas de memoria y TEA",
+        "tag": ["Problemas de memoria", "TEA"],
+        "description": "Aplica detrás del cuello, de la columna vertebral o debajo de los pies."
+      },
+      {
+        "name": "Antojos",
+        "tag": ["Antojos"],
+        "description": "Inhala o aplica debajo de la nariz o toma una gota en la lengua antes o entre comidas para controlar el apetito."
+      },
+      {
+        "name": "Tensión y rigidez muscular",
+        "tag": ["Tensión", "Rigidez muscular"],
+        "description": "Aaplica directamente en los músculos duros, cansados o tensos o aplica antes del entrenamiento."
+      },
+      {
+        "name": "Alergias estacionales",
+        "tag": ["Alergias estacionales"],
+        "description": "Toma internamente en una cápsula, en agua, o aplica debajo de la nariz o plantas de los pies."
+      },
+      {
+        "name": "Dolores de cabeza y migrañas",
+        "tag": ["Dolores de cabeza", "Migrañas"],
+        "description": "aplica en las sienes, encima de las orejas, y detrás del cuello."
+      },
+      {
+        "name": "Mal aliento",
+        "tag": ["Mal aliento"],
+        "description": "Agrega una gota a tu pasta de dientes o aplica una gota en la lengua."
+      },
+      {
+        "name": "Asma y sinusitis",
+        "tag": ["Asma", "Sinusitis"],
+        "description": "Aplica tópicamente en el pecho y en las plantas de los pies."
+      },
+      {
+        "name": "Perdida del olfato",
+        "tag": ["Asma", "Sinusitis"],
+        "description": "Inhala o aplica diluido en el puente de la nariz."
+      },
+      {
+        "name": "Balance emocional",
+        "tag": ["Balance emocional"],
+        "description": "Usa aromáticamente y tópicamente para sentirte optimista, claro, aliviado y renovado."
+      }
+    ],
+    "categories": [
+      "Analgésico",
+      "Antiespasmódico",
+      "Antiinflamatorio",
+      "Antidepresivo",
+      "Refrescante",
+      "Expectorante",
+      "Estimulante",
+      "Vasoconstrictor"
+    ]
+  },
+  {
+    "name": "Breathe",
+    "origin": "",
+    "security": "Uso aromático y topico. Siempre diluye para piel sensible. Este aceite no se toma.",
+    "application": [
+      {
+        "name": "Neumonía y asma",
+        "tag": ["Neumonía", "Asma"],
+        "description": "Difunde o aplica debajo de la nariz y en el pecho."
+      },
+      {
+        "name": "Alergias respiratorias",
+        "tag": ["Alergias respiratorias"],
+        "description": "Inhala una gota desde tus palmas o aplica debajo de la nariz."
+      },
+      {
+        "name": "Tos y congestión",
+        "tag": ["Tos", "Congestión"],
+        "description": "Difunde en el ambiente con un difusor o aplica sobre el puente de tu nariz y pecho."
+      },
+      {
+        "name": "Bronquitis y gripe",
+        "tag": ["Bronquitis", "Gripe"],
+        "description": "Difunde y aplica tópicamente en el pecho."
+      },
+      {
+        "name": "Sinusitis y pólipos nasales",
+        "tag": ["Sinusitis", "Pólipos nasales"],
+        "description": "Aplica en o debajo de la nariz."
+      },
+      {
+        "name": "Insomnio",
+        "tag": ["Insomnio"],
+        "description": "Difunde durante la noche o antes de dormir con Lavanda y aplica en las plantas de los pies."
+      },
+      {
+        "name": "Despierta la mente",
+        "tag": ["Despierta la mente"],
+        "description": "Esta mezcla contiene muchos aceites que estimulan y despiertan tu mente. Inhala profundamente en momentos de necesidad."
+      },
+      {
+        "name": "Refresca espacios cerrados",
+        "tag": ["Refresca espacios cerrados"],
+        "description": "Difunde en el ambiente para refrescar el aroma en espacios donde no hay ventanas para abrir."
+      },
+      {
+        "name": "Ayuda a cortar malos hábitos",
+        "tag": ["Ayuda a cortar malos hábitos"],
+        "description": "Inhala desde la botella o las palmas de tus manos cuando estas dejando algún vicio y te sientes ansioso y no puedes respirar bien."
+      },
+      {
+        "name": "Balance emocional",
+        "tag": ["Balance emocional"],
+        "description": "Usa aromáticamente y tópicamente para sentirte más amado, cuidado, apto para recibir, con ánimo de abrirte, consolado y abrazando a la vida."
+      }
+    ],
+    "categories": [
+      "Antibacteriano",
+      "Antifúngico",
+      "Antiviral",
+      "Antiséptico",
+      "Antiespasmódico",
+      "Expectorante",
+      "Antiinflamatorio",
+      "Antidepresivo",
+      "Vigorizante"
+    ]
+  },
+  {
+    "name": "Oregano",
+    "origin": "Turquía",
+    "security": "Uso aromático, tópico e interno. Siempre diluye, puede causar irritación a piel y boca.",
+    "application": [
+      {
+        "name": "Virus e infecciones bacterianas",
+        "tag": ["Virus", "Infecciones bacterianas"],
+        "description": "Toma una gota en una cápsula, cuatro o cinco veces al día."
+      },
+      {
+        "name": "Estreptococo o amigdalitis",
+        "tag": ["Estreptococo", "Amigdalitis"],
+        "description": "Haz gárgaras con una gota en agua."
+      },
+      {
+        "name": "Parásitos o gusanos intestinales",
+        "tag": ["Parásitos", "Gusanos intestinales"],
+        "description": "Toma en una cápsula."
+      },
+      {
+        "name": "Verrugas y callos",
+        "tag": ["Verrugas", "Callos"],
+        "description": "Aplica tópicamente diluido con aceite fraccionado de coco e Incienso directamente en el área afectada."
+      },
+      {
+        "name": "Aumentar progesterona",
+        "tag": ["Aumentar progesterona"],
+        "description": "Toma en una cápsula."
+      },
+      {
+        "name": "Infección urinaria",
+        "tag": ["Infección urinaria"],
+        "description": "Toma en una cápsula con Lemongrass."
+      },
+      {
+        "name": "Pie de atleta, tiña y cándida",
+        "tag": ["Pie de atleta", "Tiña", "Cándida"],
+        "description": "Aplica diluido en el área afectada y/o toma en una cápsula."
+      },
+      {
+        "name": "Túnel carpiano y reumatismo",
+        "tag": ["Túnel carpiano", "Reumatismo"],
+        "description": "Aplica diluido en el área afectada y/o toma en una cápsula."
+      },
+      {
+        "name": "Mejora tu función inmune",
+        "tag": ["Mejora tu función inmune"],
+        "description": "Diluye y masajea las plantas de los pies con OnGuard."
+      },
+      {
+        "name": "Mucho frío",
+        "tag": ["Frío"],
+        "description": "Masajea las manos o los pies con una gota diluido en aceite fraccionado de coco para ayudar a calentar el cuerpo."
+      },
+      {
+        "name": "Artritis",
+        "tag": ["Artritis"],
+        "description": "Masajea las manos con una gota de Orégano y una gota de Lemongrass diluido en aceite de coco fraccionado."
+      },
+      {
+        "name": "Aftas",
+        "tag": ["Aftas"],
+        "description": "Aplicar una gota con una gota de Melaleuca en el área afectada diluído con aceite de coco fraccionado varias veces al día hasta que los sintomas desaparezcan."
+      },
+      {
+        "name": "Balance emocional",
+        "tag": ["Balance emocional"],
+        "description": "Usa aromáticamente y tópicamente para sentirte más humilde, desapegado, educable, flexible y también dispuesto a estar equivocado."
+      }
+    ],
+    "categories": [
+      "Estimulante inmune",
+      "Antibacteriano",
+      "Antifúngico",
+      "Antiparasitario",
+      "Antiviral"
+    ]
+  },
+  {
+    "name": "Tea Tree",
+    "origin": "Australia",
+    "security": "Uso aromático y topico. Siempre diluye para piel sensible. Este aceite no se toma.",
+    "application": [
+      {
+        "name": "Cortes y heridas",
+        "tag": ["Cortes", "Heridas"],
+        "description": "Usa tópicamente para desinfectar y limpiar."
+      },
+      {
+        "name": "Úlceras o herpes labiales",
+        "tag": ["Úlceras", "Herpes labiales"],
+        "description": "Usa tópicamente en el área afectada."
+      },
+      {
+        "name": "Pie de atleta o cándida",
+        "tag": ["Pie de atleta", "Cándida"],
+        "description": "Toma en una cápsula vegetal o diluye y aplica tópicamente en el área afectada."
+      },
+      {
+        "name": "Dolor de garganta y amigdalitis",
+        "tag": ["Dolor de garganta", "Amigdalitis"],
+        "description": "Toma en una cápsula o haz gárgaras con agua tibia."
+      },
+      {
+        "name": "Caspa o piojos",
+        "tag": ["Caspa", "Piojos"],
+        "description": "Aplica tópicamente en las áreas afectadas o agrega a tu shampoo y deja remojar tu cabello."
+      },
+      {
+        "name": "Infecciones al oído",
+        "tag": ["Infecciones al oído"],
+        "description": "Aplica tópicamente diluido detrás y alrededor de los oídos. Pon una gota en un algodón e introducelo en el oído."
+      },
+      {
+        "name": "Acné",
+        "tag": ["Acné"],
+        "description": "Aplica tópicamente en el área afectada o a su alrededor."
+      },
+      {
+        "name": "Bronquitis, resfrío, gripe",
+        "tag": ["Bronquitis", "Resfrío", "Gripe"],
+        "description": "Toma en una cápsula, masajea en la garganta o difunde en el ambiente."
+      },
+      {
+        "name": "Urticaria o arpullido",
+        "tag": ["Urticaria", "Arpullido"],
+        "description": "Toma en una cápsula o aplica en el área afectada o a su alrededor o plantas de los pies."
+      },
+      {
+        "name": "Irritación después de afeitarse o depilarse",
+        "tag": ["Irritación despues de afeitarse", "Irritación despues de depilarse"],
+        "description": "Aplica tópicamente diluido con aceite fraccionado de coco. Mezcla con Lavanda o Incienso para más beneficio."
+      },
+      {
+        "name": "Limpiador natural",
+        "tag": ["Limpiador natural"],
+        "description": "20-30 gotas en una botella de spray con 250 ml de agua para limpiar en la casa. Especialmente en lugares húmedos!"
+      },
+      {
+        "name": "Picazón de ojos",
+        "tag": ["Picazón de ojos"],
+        "description": "Toma en una cápsula vegetal con Limón y Lavanda. Masajea detrás del cuello."
+      },
+      {
+        "name": "Balance emocional",
+        "tag": ["Balance emocional"],
+        "description": "Usa aromáticamente y tópicamente para sentirte empoderado, energéticamente protegido, con conexiones respetuosas."
+      }
+    ],
+    "categories": [
+      "Antiséptico",
+      "Antibacteriano",
+      "Antifúngico",
+      "Antiparasitario",
+      "Antiviral",
+      "Analgésico"
+    ]
+  },
+  {
+    "name": "On Guard",
+    "origin": "",
+    "security": "Para uso aromático, tópico e interno. Siempre diluye para piel sensible.",
+    "application": [
+      {
+        "name": "Mata gérmenes y patógenos del aire",
+        "tag": ["Mata gérmenes del aire", "mata patógenos del aire"],
+        "description": "Difunde en el ambiente o haz un spray con 250 ml de agua y 30 gotas de OnGuard."
+      },
+      {
+        "name": "Estimula el sistema inmune",
+        "tag": ["Estimula el sistema inmune"],
+        "description": "Difunde, toma en una cápsula, vaso de agua o masajea en todo tu cuerpo y plantas de los pies a diario."
+      },
+      {
+        "name": "Resfríos y gripe",
+        "tag": ["Resfríos", "Gripe"],
+        "description": "Toma en una cápsula, vaso de agua o masajea en las plantas de los pies."
+      },
+      {
+        "name": "Estreptococo y amigdalitis",
+        "tag": ["Estreptococo", "Amigdalitis"],
+        "description": "Haz gárgaras con una gota en agua y traga. Toma en una cápsula o vaso de agua."
+      },
+      {
+        "name": "Herpes labial, aftas, verrugas",
+        "tag": ["Herpes labiales", "Aftas", "Verrugas"],
+        "description": "Aplica diluido en el área afectada."
+      },
+      {
+        "name": "Heridas infectadas",
+        "tag": ["Herpes labiales", "Aftas", "Verrugas"],
+        "description": "Aplica diluido en el área afectada."
+      },
+      {
+        "name": "Salud oral",
+        "tag": ["Salud oral"],
+        "description": "Haz gárgaras con una gota en un vaso de agua. Haz tu propio enjuage bucal."
+      },
+      {
+        "name": "Problemas de hongos y parásitos",
+        "tag": ["Problemas de hongos", "Problemas de parásitos"],
+        "description": "Aplica diluido en el área afectada o toma en una cápsula."
+      },
+      {
+        "name": "Antiséptico y detergente para la casa",
+        "tag": ["Antiséptico", "Detergente para la casa"],
+        "description": "Difunde o diluye en agua en una botella de spray para limpiar las superficies."
+      },
+      {
+        "name": "Fatiga crónica y enfermedad autoinmune",
+        "tag": ["Fatiga crónica", "Enfermedad autoinmune"],
+        "description": "Toma en una cápsula vegetal o masajea las plantas de los pies."
+      },
+      {
+        "name": "Balance emocional",
+        "tag": ["Balance emocional"],
+        "description": "Usa aromáticamente y/o tópicamente para sentirte protegido, capaz, con limites, en integridad, independiente y fuerte."
+      }
+    ],
+    "categories": [
+      "Antibacteriano",
+      "Antifúngico",
+      "Antiviral",
+      "Antiséptico",
+      "Estimulante inmune",
+      "Antiparasitico",
+      "Antiinflamatorio"
+    ]
+  }
+]

@@ -29,7 +29,7 @@ Precauciones
 Roll-On Lavender + Peppermint
 
 Descripción
-Esta mezcla de Lavanda y Menta refresca y calma, ayudando a liberar el estrés y preparar el cuerpo para el descanso.
+Esta mezcla de Lavanda, Menta refresca y calma ayuda a liberar el estrés y preparar el cuerpo para el descanso.
 
 Modo de Preparación
 Para un roll-on de 10 ml: 5 gotas de Lavanda y 5 de Menta, con aceite de coco.

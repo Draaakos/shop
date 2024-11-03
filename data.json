@@ -1,8 +1,9 @@
 [
   {
     "name": "Lavender",
+    "description": "Durante siglos, la lavanda ha cautivado los corazones con su inconfundible aroma y sus múltiples beneficios. Los antiguos egipcios y romanos fueron los primeros en abrazar su versatilidad, usándolo para bañarse, cocinar y como perfume. Hoy en día, la Lavanda CPTG® es reconocida por su capacidad de infundir calma y tranquilidad cuando se ingiere.* Cuando se aplica sobre la piel, la lavanda es una opción para reducir la apariencia de imperfecciones de la piel. Para experimentar su aroma relajante, mezcla lavanda con agua de baño o aplícala en las sienes y la nuca. Por la noche, incorpora unas gotas de Lavanda en las almohadas, la ropa de cama y las plantas de los pies. Sorprendentemente útil, con un aroma suave y universalmente atractivo, tener aceite esencial de lavanda a mano es una forma sencilla y natural de favorecer tu bienestar.",
     "origin": "Francia, Bulgaria",
-    "security": "Para uso aromático, tópico e interno. Diluye para piel sensible.",
+    "security": "Diluye para piel sensible.",
     "application": [
       {
          "name": "Insomnio",
@@ -72,12 +73,18 @@
       "Calmante",
       "Antibacteriano",
       "Cardiotónico"
-    ]
+    ],
+    "usage": {
+      "aromatic": "Para uso aromático.",
+      "topical": "Para uso tópico.",
+      "internal": "Para uso interno."
+    }
   },
   {
     "name": "Lemon",
+    "description": "Indudablemente fresco y familiar, el aceite esencial CPTG® de Limón ofrece muchos beneficios y aplicaciones. Conocido por su aroma fresco y cítrico, el limón crea un ambiente alegre y animado. Como un potente agente purificador, el limón se puede usar en toda tu casa para refrescar el aire y superficies duras de manera efectiva y natural. También se puede usar para realzar el sabor en tus recetas y bebidas favoritas. Cuando se consume, el limón puede ayudar a mantener un sistema digestivo y nervioso saludable debido a su contenido significativo de limoneno.",
     "origin": "Italia",
-    "security": "Para uso aromático, tópico e interno. Evitar la exposición al sol después del uso tópico.",
+    "security": "Evitar la exposición al sol después del uso tópico.",
     "application": [
       {
         "name": "Cálculos biliares y renales",
@@ -150,12 +157,18 @@
       "Desinfectante",
       "Astringente",
       "Desengrasante"
-    ]
+    ],
+    "usage": {
+      "aromatic": "Para uso aromático.",
+      "topical": "Para uso tópico.",
+      "internal": "Para uso interno."
+    }
   },
   {
     "name": "Peppermint",
+    "description": "La planta de menta, un híbrido de menta acuática y hierbabuena, es una potencia de la naturaleza. Popular durante siglos, la versatilidad de la menta proviene de su notable combinación de sabor, aroma y posibles beneficios para el bienestar. El aceite esencial CPTG® de Menta tiene un aroma distintivo y vigorizante que crea una atmósfera positiva y energizante perfecta para la actividad física y mental. La investigación clínica sugiere que la ingesta de menta promueve una flora intestinal saludable, una función digestiva saludable y puede ayudar a aliviar el malestar digestivo.* También puede respaldar la salud y la función cognitiva cuando se consumen cuatro gotas.* Debido al alto contenido de mentol del aceite, la menta puede ser calmante cuando se utiliza en un masaje. También tiene un efecto refrescante cuando se usa tópicamente y puede proporcionar la sensación de vías respiratorias abiertas cuando se inhala. Un camaleón culinario, de Menta funciona tanto en platos dulces como salados. Desde dulces hasta salsas, puede transformar lo ordinario en extraordinario.",
     "origin": "USA",
-    "security": "Uso aromático, tópico e interno. Diluye para aplicación tópica.",
+    "security": "Diluye para aplicación tópica.",
     "application": [
       {
         "name": "Energía y atención",
@@ -227,12 +240,18 @@
       "Expectorante",
       "Estimulante",
       "Vasoconstrictor"
-    ]
+    ],
+    "usage": {
+        "aromatic": "Para uso aromático.",
+        "topical": "Para uso tópico.",
+        "internal": "Para uso interno."
+    }
   },
   {
     "name": "Breathe",
+    "description": "Breathe de dōTERRA es una extraordinaria mezcla de aceites esenciales, que incluye hoja de laurel, menta, eucalipto, melaleuca, limón, ravensara y cardamomo. Breathe de ōTERRA mantiene la sensación de las vías respiratorias despejadas y una fácil respiración mientras minimiza los efectos de las amenazas estacionales. Breathe de dōTERRA se puede aplicar tópicamente en el pecho, la espalda o en la planta de los pies o difundir en la noche para calmar los sentidos y promover una noche de sueño reparador.",
     "origin": "",
-    "security": "Uso aromático y topico. Siempre diluye para piel sensible. Este aceite no se toma.",
+    "security": "Siempre diluye para piel sensible. Este aceite no se toma.",
     "application": [
       {
         "name": "Neumonía y asma",
@@ -295,10 +314,16 @@
       "Antiinflamatorio",
       "Antidepresivo",
       "Vigorizante"
-    ]
+    ],
+    "usage": {
+      "aromatic": "Para uso aromático.",
+      "topical": "Para uso tópico.",
+      "internal": "No consumir."
+    }
   },
   {
     "name": "Oregano",
+    "description": "El orégano es uno de los aceites esenciales más potentes y poderosos y se ha usado durante siglos en las prácticas tradicionales de salud por sus propiedades de purificación y estimulación inmunológica.* Los componentes químicos principales del orégano son el carvacrol y timol, ambos en el grupo de los fenoles, que poseen propiedades depurativas y antioxidantes.* Debido a su alto contenido de fenol, se debe tener precaución cuando se inhala o difunde orégano; únicamente una a dos gotas se necesitan. Además, el orégano debe diluirse con aceite fraccionado de coco de dōTERRA cuando se aplica en la piel. Una gota tomada diariamente puede ayudar a mantener la función inmunológica saludable; el orégano se puede tomar con más frecuencia cuando las amenazas estacionales son altas o cuando sea necesario para un incremento adicional de inmunidad.* Además de ser una especia popular de cocina, el orégano apoya la digestión saludable al promover la secreción de los jugos digestivos.* El orégano también actúa como un potenciador y ecualizador en mezclas de aceites esenciales y puede ayudar a apoyar la función respiratoria saludable cuando se toma internamente.",
     "origin": "Turquía",
     "security": "Uso aromático, tópico e interno. Siempre diluye, puede causar irritación a piel y boca.",
     "application": [
@@ -378,8 +403,9 @@
   },
   {
     "name": "Tea Tree",
+    "description": "El aceite esencial de Árbol de Té tiene más de 90 compuestos diferentes y un sinfín de aplicaciones. Las hojas del Árbol de Té han sido usadas por los aborígenes de Australia durante siglos, aplicando las hojas trituradas directamente sobre la piel para un efecto refrescante. El Árbol de Té es más conocido por sus propiedades purificantes. Se puede usar para limpiar y purificar la piel y las uñas, y para mantener un cutis saludable. El Árbol de Té también se usa para calmar irritaciones ocasionales en la piel, y al difundirlo, ayuda a purificar y refrescar el aire.",
     "origin": "Australia",
-    "security": "Uso aromático y topico. Siempre diluye para piel sensible. Este aceite no se toma.",
+    "security": "Este aceite no se toma.",
     "application": [
       {
         "name": "Cortes y heridas",
@@ -454,12 +480,18 @@
       "Antiparasitario",
       "Antiviral",
       "Analgésico"
-    ]
+    ],
+    "usage": {
+        "aromatic": "Para uso aromático.",
+        "topical": "Para uso tópico.",
+        "internal": "No consumir."
+    }
   },
   {
     "name": "On Guard",
+    "description": "On Guard de dōTERRA, una mezcla de aceites esenciales patentada, proporciona una alternativa natural y eficaz para el apoyo inmunológico.* Como una de las mezclas más vendidas de dōTERRA, On Guard de dōTERRA protege contra las amenazas ambientales y estacionales con aceites esenciales conocidos por sus efectos positivos en el sistema inmunológico.* On Guard de dōTERRA puede tomarse internamente diariamente para mantener la función inmune saludable y apoyar la función cardiovascular saludable.* También se puede utilizar en las superficies en toda la casa como un limpiador no tóxico.* Cuando se difunde, On Guard de dōTERRA ayuda a purificar el aire y puede ser muy energizante y edificante. On Guard de dōTERRA proporciona beneficios limpiadores y purificadores",
     "origin": "",
-    "security": "Para uso aromático, tópico e interno. Siempre diluye para piel sensible.",
+    "security": "Siempre diluye para piel sensible.",
     "application": [
       {
         "name": "Mata gérmenes y patógenos del aire",
@@ -525,6 +557,419 @@
       "Estimulante inmune",
       "Antiparasitico",
       "Antiinflamatorio"
-    ]
+    ],
+    "usage": {
+        "aromatic": "Para uso aromático.",
+        "topical": "Para uso tópico.",
+        "internal": "Para uso interno."
+    }
+  },
+  {
+    "name": "Lavender + Lemon",
+    "description": "Esta mezcla refrescante y relajante reduce la tensión antes de dormir y calma el cuerpo y la mente.",
+    "origin": "",
+    "security": "Evitar exposición solar directa en áreas aplicadas. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Relajación",
+      "Mejora del sueño",
+      "Calma general"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas.",
+        "topical": "Aplicar en la piel: Masajear en cuello y sienes.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + Peppermint",
+    "description": "Esta mezcla de Lavanda, Menta refresca y calma ayuda a liberar el estrés y preparar el cuerpo para el descanso.",
+    "origin": "",
+    "security": "Evitar contacto con ojos. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Relajación",
+      "Calma mental",
+      "Refrescante"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas.",
+        "topical": "Aplicar en la piel: Masajear en cuello y sienes.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + Wild Orange",
+    "description": "Lavanda y Naranja Silvestre crean una combinación que eleva el ánimo y promueve una sensación de calma ideal para relajarse.",
+    "origin": "",
+    "security": "Evitar exposición solar. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Relajación",
+      "Elevación de ánimo",
+      "Calma emocional"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas.",
+        "topical": "Aplicar en la piel: Masajear en cuello y sienes.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + Breathe",
+    "description": "Ideal para antes de dormir, ayuda a abrir las vías respiratorias y promueve una relajación profunda.",
+    "origin": "",
+    "security": "Evitar contacto con ojos. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Relajación",
+      "Apoyo respiratorio",
+      "Calma general"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en pecho y muñecas.",
+        "topical": "Aplicar en la piel: Masajear en cuello y sienes.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lemon + Peppermint",
+    "description": "Refrescante y estimulante, esta mezcla aumenta la energía y ayuda a concentrarse durante el día.",
+    "origin": "",
+    "security": "Evitar exposición solar. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Energía",
+      "Concentración",
+      "Refrescante"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas y respirar profundamente.",
+        "topical": "Aplicar en la piel: Masajear en cuello y sienes.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lemon + Wild Orange",
+    "description": "Esta combinación revitaliza el estado de ánimo y despierta la mente, proporcionando una sensación positiva.",
+    "origin": "",
+    "security": "Evitar exposición solar. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Energía",
+      "Elevación de ánimo",
+      "Claridad mental"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas.",
+        "topical": "Aplicar en la piel: Masajear en cuello y sienes.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Peppermint + Wild Orange",
+    "description": "Refrescante y motivador, este roll-on ayuda a mejorar el enfoque y proporciona un impulso de energía.",
+    "origin": "",
+    "security": "Evitar exposición solar. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Concentración",
+      "Energía",
+      "Refrescante"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas y respirar profundamente.",
+        "topical": "Aplicar en la piel: Masajear en cuello y sienes.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + Lemon + Peppermint",
+    "description": "Combinación equilibrante de Lavanda, Limón y Menta, que revitaliza y calma al mismo tiempo, ideal para días ocupados.",
+    "origin": "",
+    "security": "Evitar exposición solar. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Energía",
+      "Calma",
+      "Concentración"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas.",
+        "topical": "Aplicar en la piel: Masajear en cuello y sienes.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "On Guard + Lemon",
+    "description": "On Guard y Limón juntos apoyan las defensas naturales del cuerpo, ayudando a fortalecer el sistema inmunológico.",
+    "origin": "",
+    "security": "Evitar exposición solar. Realizar una prueba de sensibilidad en piel.",
+    "application": [],
+    "categories": [
+      "Refuerzo inmunológico",
+      "Purificación",
+      "Estimulante"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas y oler profundamente.",
+        "topical": "Aplicar en la piel: Masajear en cuello y sienes.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "On Guard + Tea Tree",
+    "description": "Ambos aceites son conocidos por sus propiedades antibacterianas, ayudando a purificar el ambiente y fortalecer las defensas del organismo.",
+    "origin": "",
+    "security": "No aplicar en pieles sensibles sin diluir. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Refuerzo inmunológico",
+      "Antibacteriano",
+      "Purificación del ambiente"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas y oler profundamente.",
+        "topical": "Aplicar en la piel: Masajear en cuello y sienes.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Oregano + On Guard",
+    "description": "Esta combinación potente ofrece una barrera de defensa natural contra amenazas externas, ideal para fortalecer el sistema inmunológico.",
+    "origin": "",
+    "security": "Diluir adecuadamente debido a la potencia del orégano. No aplicar cerca de ojos y mucosas.",
+    "application": [],
+    "categories": [
+      "Refuerzo inmunológico",
+      "Antibacteriano",
+      "Apoyo en temporadas frías"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas y oler profundamente.",
+        "topical": "Aplicar en la piel: Masajear en plantas de los pies.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + On Guard",
+    "description": "Lavanda y On Guard ofrecen una mezcla que calma y al mismo tiempo refuerza el sistema inmunológico.",
+    "origin": "",
+    "security": "Realizar una prueba de sensibilidad. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Relajación",
+      "Refuerzo inmunológico",
+      "Calma emocional"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas.",
+        "topical": "Aplicar en la piel: Masajear en cuello y plantas de los pies.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Breathe + Peppermint",
+    "description": "Refrescante y purificador, esta mezcla ayuda a abrir las vías respiratorias y promover una respiración más fluida.",
+    "origin": "",
+    "security": "Evitar contacto con ojos. Mantener fuera del alcance de niños",
+    "application": [],
+    "categories": [
+      "Apoyo respiratorio",
+      "Refrescante",
+      "Purificación del ambiente"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en pecho o muñecas.",
+        "topical": "Aplicar en la piel: Masajear en pecho y espalda.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Breathe + Tea Tree",
+    "description": "Tea Tree y Breathe colaboran para limpiar y purificar las vías respiratorias, ayudando a combatir infecciones respiratorias.",
+    "origin": "",
+    "security": "No aplicar cerca de ojos y mucosas. Mantener fuera del alcance de niños",
+    "application": [],
+    "categories": [
+      "Apoyo respiratorio",
+      "Purificación",
+      "Limpieza de vías respiratorias"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en pecho o muñecas.",
+        "topical": "Aplicar en la piel: Masajear en pecho y cuello.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + Breathe",
+    "description": "Relaja y calma mientras apoya la respiración, especialmente útil antes de dormir para ayudar a una respiración fluida.",
+    "origin": "",
+    "security": "No aplicar cerca de ojos y mucosas. Mantener fuera del alcance de niños",
+    "application": [],
+    "categories": [
+      "Relajación",
+      "Apoyo respiratorio",
+      "Calma general"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas y pecho.",
+        "topical": "Aplicar en la piel: Masajear en cuello y pecho.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Peppermint + Lemon + Breathe",
+    "description": "Combinación refrescante y purificadora para despejar la respiración y refrescar el ambiente.",
+    "origin": "",
+    "security": "No aplicar cerca de ojos y mucosas. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Apoyo respiratorio",
+      "Refrescante",
+      "Purificación del ambiente"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en pecho y muñecas.",
+        "topical": "Aplicar en la piel: Masajear en cuello y pecho.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + Tea Tree",
+    "description": "Esta mezcla combate las imperfecciones y calma la piel irritada, ideal para pieles propensas al acné.",
+    "origin": "",
+    "security": "Realizar prueba de sensibilidad. No aplicar en piel sensible sin diluir.",
+    "application": [],
+    "categories": [
+      "Cuidado de la piel",
+      "Calma para irritaciones",
+      "Antiséptico"
+    ],
+    "usage": {
+        "aromatic": "No oler.",
+        "topical": "Aplicar en la piel: Directamente en las áreas afectadas.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + Lemon",
+    "description": "Lavanda y Limón juntos ofrecen una mezcla refrescante para la piel, ideal para aclarar e iluminar, especialmente en pieles con tendencia a la grasa.",
+    "origin": "",
+    "security": "Evitar exposición solar en áreas donde se aplique. Realizar prueba de sensibilidad.",
+    "application": [],
+    "categories": [
+      "Cuidado de la piel",
+      "Refrescante",
+      "Iluminador"
+    ],
+    "usage": {
+        "aromatic": "No oler.",
+        "topical": "Aplicar en la piel: Usar en zonas específicas de la cara, evitando el contorno de ojos.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + Oregano",
+    "description": "Orégano es conocido por sus propiedades potentes, y combinado con Lavanda, ayuda a combatir imperfecciones y calmar la piel irritada. Se recomienda una alta dilución.",
+    "origin": "",
+    "security": "Diluir bien debido a la potencia del Orégano. No aplicar cerca de ojos ni mucosas.",
+    "application": [],
+    "categories": [
+      "Cuidado de la piel",
+      "Antiséptico",
+      "Calma"
+    ],
+    "usage": {
+        "aromatic": "No oler.",
+        "topical": "Aplicar en la piel: Aplicar en áreas problemáticas de la piel en pequeñas cantidades.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + Wild Orange",
+    "description": "Lavanda y Naranja Silvestre son una combinación ideal para iluminar y suavizar la piel, con un toque aromático que también eleva el estado de ánimo.",
+    "origin": "",
+    "security": "Evitar la exposición al sol tras la aplicación. Realizar una prueba de sensibilidad en la piel.",
+    "application": [],
+    "categories": [
+      "Cuidado de la piel",
+      "Iluminador",
+      "Calma y bienestar"
+    ],
+    "usage": {
+        "aromatic": "No oler.",
+        "topical": "Aplicar en la piel: Aplicar en el rostro y cuello evitando el contorno de ojos.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Wild Orange + Lemon",
+    "description": "Esta mezcla cítrica es energizante y estimulante, perfecta para momentos en los que necesitas un impulso emocional y mental.",
+    "origin": "",
+    "security": "Evitar la exposición solar en las zonas aplicadas. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Elevación del estado de ánimo",
+      "Energizante",
+      "Estimulación mental"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas y oler profundamente.",
+        "topical": "Aplicar en la piel: Masajear en el cuello.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + Wild Orange",
+    "description": "Esta combinación no solo calma, sino que también eleva el estado de ánimo, ideal para momentos de estrés o ansiedad.",
+    "origin": "",
+    "security": "Evitar exposición al sol tras su uso. Mantener fuera del alcance de niños.",
+    "application": [],
+    "categories": [
+      "Calma",
+      "Elevación del estado de ánimo",
+      "Alivio del estrés"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas o en el pecho.",
+        "topical": "Aplicar en la piel: Masajear en la parte posterior del cuello.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "On Guard + Wild Orange",
+    "description": "Esta mezcla no solo apoya el sistema inmunológico, sino que también contribuye a elevar el ánimo, haciéndola ideal para épocas de estrés o cuando se necesita un refuerzo emocional.",
+    "origin": "",
+    "security": "Evitar exposición solar en las zonas de aplicación. Realizar prueba de sensibilidad.",
+    "application": [],
+    "categories": [
+      "Refuerzo del estado de ánimo",
+      "Apoyo inmunológico",
+      "Energizante"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas y oler profundamente.",
+        "topical": "Aplicar en la piel: Masajear en el pecho o plantas de los pies.",
+        "internal": "No consumir."
+    }
+  },
+  {
+    "name": "Lavender + Peppermint + Wild Orange",
+    "description": "Refrescante y revitalizante, esta mezcla ayuda a sentirse renovado, promoviendo un estado de ánimo positivo y energía mental.",
+    "origin": "",
+    "security": "Evitar exposición solar tras aplicación. Realizar prueba de sensibilidad en la piel.",
+    "application": [],
+    "categories": [
+      "Revitalización",
+      "Elevación del ánimo",
+      "Alivio de estrés"
+    ],
+    "usage": {
+        "aromatic": "Oler: Aplicar en muñecas y oler profundamente.",
+        "topical": "Aplicar en la piel: Masajear en cuello y pecho.",
+        "internal": "No consumir."
+    }
   }
 ]

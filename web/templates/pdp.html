@@ -1,16 +1,13 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load web_extras %}
+
+{% block css %}
+<link rel="stylesheet" href="{% version 'css/pdp-page.css' %}" />
+{% endblock %}
 
 {% block js %}
 <script>
     window.serializedContent = {{ serializedContent }};
 </script>
-{% endblock %}
-
-{% block css %}
-    <link rel="stylesheet" href="{% static 'css/pdp-page.css' %}" />
-{% endblock %}
-
-{% block content %}
-    <script defer src="{% static 'pdp.bundle.js'%}" ></script>
+<script defer src="{% version 'js/pdp.bundle.js'%}" ></script>
 {% endblock %}

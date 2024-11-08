@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from web.models import Product
+from api.models import Product
 from web.dto import productdetail
 
 
@@ -8,8 +8,8 @@ class PDPView(TemplateView):
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
-        sku = kwargs['sku']
-        product = Product.objects.get(sku=sku)
+        product_id = kwargs['id']
+        product = Product.objects.get(pk=product_id)
         dto = productdetail.DTO(product)
         context['serializedContent'] = dto.to_json()
 

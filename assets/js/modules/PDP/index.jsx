@@ -9,7 +9,9 @@ const PDP = () => {
     <div>
       <Menu />
       <div className="page">
-        <Product data={product}/>
+        <div className="pdp">
+          <Product data={product}/>
+        </div>
       </div>
     </div>
   );

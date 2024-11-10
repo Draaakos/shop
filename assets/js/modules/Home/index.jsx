@@ -1,7 +1,7 @@
 import Carousel from 'ui/Carousel';
 import Card from 'ui/Card';
 import Publication from 'ui/Publication';
-import Menu from './components/Menu/index.jsx';
+import Menu from 'ui/Menu';
 import useHome from './useHome.js';
 
 
@@ -27,6 +27,7 @@ const HomeApp = () => {
 
   return (
     <div>
+      <Menu />
       <Carousel images={images}/>
       {/* <Menu onSelect={actions.onSelectOptionMenu}/> */}
       <div className="card__section">

@@ -1,42 +1,47 @@
 .footer
-    padding 1em
-    max-width 1170px
+    display grid
+    border-top 1px solid #ebebeb
+    color #666
+    font-family "Raleway"
+    padding-top 50px
+    margin-top 100px
 
-    &__section
-        color #666
+    &__detail
+        border-bottom 1px solid #ebebeb
+        padding 3em 1em
 
-        &__header
-            color #111
-            margin-bottom 1em
+    &__category
+        padding-bottom 2em
+
+        &__title
             font-weight bold
+            text-transform uppercase
+            font-family "MavenPro Regular"
+            color #444
+            margin-bottom 15px
 
-        &__icons
-            display flex
+        &__item
+            padding 8px 0
 
-            .circle-icon
-                background-color #e1e1e1
-                height 40px
-                width 40px
-                display flex
-                justify-content center
-                align-items center
-                width value
-                margin-right 5px
-                color #111
+            &:hover
+                cursor pointer
 
-    &__title
-        margin-bottom 1em
 
     &__copyright
-        color #666
         text-align center
-
-    .grid
-        grid-gap 4em
-
+        padding 1em
 
 @media screen and (min-width 1024px)
     .footer
-        padding 0
-        margin 4em auto 1em
+        padding-top 50px
+        margin-top 100px
+
+        &__detail
+            display grid
+            grid-template-columns repeat(4, 1fr)
+            border-bottom 1px solid #ebebeb
+            padding 3em 0
+
+        &__copyright
+            text-align center
 

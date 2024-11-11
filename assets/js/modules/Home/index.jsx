@@ -2,6 +2,7 @@ import Carousel from 'ui/Carousel';
 import Card from 'ui/Card';
 import Publication from 'ui/Publication';
 import Menu from 'ui/Menu';
+import Footer from 'ui/Footer';
 import useHome from './useHome.js';
 
 
@@ -38,6 +39,10 @@ const HomeApp = () => {
 
       <div className='publication__section'>
         {publications}
+      </div>
+
+      <div className='footer__section'>
+        <Footer />
       </div>
     </div>
   );

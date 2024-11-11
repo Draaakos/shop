@@ -1,4 +1,5 @@
 import Menu from 'ui/Menu';
+import Footer from 'ui/Footer';
 import Product from './Product';
 
 
@@ -12,6 +13,7 @@ const PDP = () => {
         <div className="pdp">
           <Product data={product}/>
         </div>
+        <Footer />
       </div>
     </div>
   );

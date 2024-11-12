@@ -3,9 +3,9 @@ const Footer = () => {
     <div className="footer">
       <div className="footer__detail">
         <div className="footer__category">
-          <div className="footer__category__title">Contact</div>
-          <div className="footer__category__item">Address: 1231 Domain Blvd, Austin, TX 78758, United State.</div>
-          <div className="footer__category__item">Phone: +1 512-637-1234</div>
+          <div className="footer__category__title">Contacto</div>
+          <div className="footer__category__item">Dirección: 1231 Domain Blvd, Austin, TX 78758, United State.</div>
+          <div className="footer__category__item">Teléfono: +569 8888 8888</div>
           <div className="footer__category__item">Email: minwpteam@gmail.com</div>
         </div>
         <div></div>

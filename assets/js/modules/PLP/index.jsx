@@ -1,48 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import Pod from 'ui/Pod';
+import Filter from './components/Filter';
 
-const checkArrValue = (arr, value) => !!(arr.indexOf(value) >= 0);
 
-const ProductList = ({ products }) => {
-  const [likedProducts, setLikedProducts] = useState([]);
-
-  useEffect(() => {
-    const likedSkus = JSON.parse(localStorage.getItem('like-skus'));
-
-    if (!likedSkus) {
-      localStorage.removeItem('like-skus');
-      return;
-    }
-
-    setLikedProducts(likedSkus);
-  }, []);
-
+const PLP = () => {
   return (
-    <section className="page-wrapper">
-      <div className="breadcrumb">
-        <div className="breadcrumb__item">
-          <i className="fa fa-home" aria-hidden="true"></i>
-          <div>
-            <a href="/">Inicio</a>
-          </div>
-        </div>
-
-        <i className="fa fa-angle-right" aria-hidden="true"></i>
-        <div>
-          <a href="/productos">productos</a>
-        </div>
+    <div>
+      <div><Filter /></div>
+      <div>
+        <div><img src="https://theme.minwp.com/ahashop/wp-content/uploads/2017/03/banner1.jpg" /></div>
+        <div></div>
       </div>
-      <div className="plp">
-        {products.map((product, index) => (
-          <Pod
-            data={product}
-            key={`pod-${index}`}
-            isLike={checkArrValue(likedProducts, product.sku)}
-          />
-        ))}
-      </div>
-    </section>
+    </div>
   );
 };
 
-export default ProductList;
+export default PLP;

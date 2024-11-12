@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from web.models import Product
+from api.models import Product
 from web.dto import productlist
 
 

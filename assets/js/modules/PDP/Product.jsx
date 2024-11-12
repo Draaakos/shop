@@ -23,12 +23,14 @@ const Product = ({ data }) => {
   ) : null;
 
 
-  const categories = data.categories.map((category, idx) => <div key={`category-${idx}`}>- {category}</div>)
+  const categories = data.categories
+    .map((category, idx) => <div key={`category-${idx}`}>- {category}</div>)
+
 
   const categoryClasses = classNames({
     "product__detail__categories": true,
     "product__detail__categories__extend": categories.length > 5
-  })
+  });
 
   return (
     <div>

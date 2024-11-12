@@ -1,14 +1,19 @@
 .breadcrumb
     width 100%
     align-items center
+    display flex
+    font-family 'Raleway'
+    color #666
 
     &__item
         display flex
         justify-content center
         align-content center
-        color #555
 
-    .fa
-        margin 0 .5em
-        display flex;
-        align-items: center;
+        &:hover
+            cursor pointer
+            color #9779d5
+
+    &__separator
+        min-width 10px
+        text-align center

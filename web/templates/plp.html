@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
-{% load static %}
-
-{% block js %}
-    <script>
-        window.serializedContent = {{ serializedContent }};
-    </script>
-    <script defer src="{% static 'plp.bundle.js'%}" ></script>
-{% endblock %}
+{% load web_extras %}
 
 {% block css %}
-    <link rel="stylesheet" href="{% static 'css/plp-page.css' %}" />
+<link rel="stylesheet" href="{% version 'css/plp-page.css' %}" />
+{% endblock %}
+
+{% block js %}
+<script>
+    window.serializedContent = {{ serializedContent }};
+</script>
+<script defer src="{% version 'js/plp.bundle.js'%}" ></script>
 {% endblock %}

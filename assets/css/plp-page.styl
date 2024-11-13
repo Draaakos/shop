@@ -1,15 +1,78 @@
-@import 'ui/navbar'
-@import 'ui/footer'
-@import 'ui/config'
-@import 'ui/breadcrumb'
+@import 'ui/index'
 @import 'ui/pod'
 
-@media screen and (min-width 1024px)
-    .plp
-        max-width 1240px
-        margin 0 auto
+.filter
+    display none
+
+
+.plp
+    .breadcrumb
+        padding-left 1em
+        margin-bottom 1em
+
+
+    &__list_banner
+        img
+            width 100%
+
+    &__list_title
+        padding 1em
+        margin 2em 0
+        font-size 20px
+        font-family 'MavenPro Regular'
+        color #444
+
+    &__list
+        padding 0 1em
         display grid
-        grid-template-columns repeat(4, 1fr)
-        grid-gap 1em
+        grid-template-columns repeat(2, 1fr)
+        gap 1em
 
 
+
+@media screen and (min-width 1024px)
+    .filter
+        display block
+        font-family 'MavenPro Regular'
+        position sticky
+        top 1em
+
+        &__item
+            margin-bottom 8px
+            color #666
+            font-size 16px
+
+            &:hover
+                cursor pointer
+                color #3b9792
+
+        &__title
+            font-weight bold
+            color #444
+            font-size 18px
+
+
+
+    .plp
+        .breadcrumb
+            padding 1em 150px
+            margin 1em 0 50px
+
+        &__content
+            display grid
+            grid-template-columns 300px 1fr
+            gap 1em
+            padding 0 150px
+
+        &__list_title
+            padding 0
+            margin 2em 0
+            font-size 20px
+            font-family 'MavenPro Regular'
+            color #444
+
+        &__list
+            padding 0
+            display grid
+            grid-template-columns repeat(4, 1fr)
+            gap 1em

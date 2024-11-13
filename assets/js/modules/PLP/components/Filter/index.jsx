@@ -1,13 +1,22 @@
-const Filter = () => {
+const FilterPOD = () => {
   return (
     <div>
-      <div>Product categories</div>
-      <div>Accessories</div>
-      <div>Bags</div>
-      <div>Clothes Women</div>
-      <div>Shoes</div>
-      <div>Uncategorized</div>
-      <div>Watches</div>
+
+    </div>
+  );
+}
+
+
+const Filter = () => {
+  return (
+    <div className="filter">
+      <div className="filter__item filter__title">Product categories</div>
+      <div className="filter__item">Accessories</div>
+      <div className="filter__item">Bags</div>
+      <div className="filter__item">Clothes Women</div>
+      <div className="filter__item">Shoes</div>
+      <div className="filter__item">Uncategorized</div>
+      <div className="filter__item">Watches</div>
     </div>
   );
 };
